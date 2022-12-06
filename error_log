@@ -1,0 +1,2 @@
+[28-Sep-2020 14:03:44 America/New_York] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/schoolxsaas/public_html/connection.php on line 19
+[28-Sep-2020 14:03:44 America/New_York] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/schoolxsaas/public_html/connection.php on line 19

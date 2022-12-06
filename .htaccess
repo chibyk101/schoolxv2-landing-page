@@ -1,0 +1,19 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^schoolx\.ng$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.schoolx\.ng$
+RewriteRule ^(.*)$ "https\:\/\/schoolx\.ng\/$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^schoolx\.ng$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.schoolx\.ng$
+RewriteRule ^parent$ "https\:\/\/dashboard\.schoolx\.ng\/parent" [R=301,L]
+RewriteCond %{HTTP_HOST} ^schoolx\.ng$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.schoolx\.ng$
+RewriteRule ^login$ "https\:\/\/dashboard\.schoolx\.ng\/pages\/login\.php" [R=301,L]
+RewriteCond %{HTTP_HOST} ^schoolx\.ng$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.schoolx\.ng$
+RewriteRule ^parents$ "https\:\/\/dashboard\.schoolx\.ng\/parent" [R=301,L]
+RewriteCond %{HTTP_HOST} ^schoolx\.ng$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.schoolx\.ng$
+RewriteRule ^learn$ "https\:\/\/dashboard\.schoolx\.ng\/parent" [R=301,L]
